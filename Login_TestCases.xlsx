@@ -1,6 +1,6 @@
-| TC ID | Test Scenario      | Test Steps                                   | Expected Result                     | Actual Result | Status | Priority | Type        |
-| ----- | ------------------ | -------------------------------------------- | ----------------------------------- | ------------- | ------ | -------- | ----------- |
-| TC001 | Blank Fields Login | Leave email & password empty and click login | Login button is disabled            | As per UI     | Pass   | High     | Negative/UI |
-| TC002 | Random credentials | Enter wrong email & password and click login | "Invalid credentials" error         | As per UI     | Pass   | High     | Negative    |
-| TC003 | Password Toggle    | Enter password & click eye icon              | Password becomes visible            | As per UI     | Pass   | Medium   | UI          |
-| TC004 | UI Elements Check  | Open login page                              | Title, inputs, eye icon are visible | As per UI     | Pass   | Low      | UI          |
+| TC ID | Test Scenario              | Test Steps                                                                                 | Expected Result                                              | Actual Result               | Status   | Priority | Type        |
+| ----- | -------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------- | -------- | -------- | ----------- |
+| TC001 | Login with Blank Fields    | 1. Leave Email field blank<br>2. Leave Password field blank<br>3. Check Login button state | Login button should be **disabled**                          | Login button is **enabled** | **Fail** | High     | Negative/UI |
+| TC002 | Invalid Credentials        | 1. Enter wrong email and password<br>2. Click Login                                        | "Invalid credentials" error message is shown                 | Error message shown         | Pass     | High     | Negative    |
+| TC003 | Password Visibility Toggle | 1. Enter any password<br>2. Click on eye icon                                              | Password becomes visible                                     | Password visible            | Pass     | Medium   | UI          |
+| TC004 | UI Elements Presence       | 1. Open Login page                                                                         | Title, Email field, Password field, Eye icon are all visible | All elements visible        | Pass     | Low      | UI          |

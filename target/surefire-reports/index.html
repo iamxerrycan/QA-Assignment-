@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -123,6 +123,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.janitri.tests.LoginTest" class="method navigator-link" hash-for-method="testPasswordMaskedToggle">testPasswordMaskedToggle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.janitri.tests.LoginTest" class="method navigator-link" hash-for-method="testUIElementsPresent">testUIElementsPresent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -175,6 +180,13 @@
                   <a name="testPasswordMaskedToggle">
                   </a> <!-- testPasswordMaskedToggle -->
                   <span class="method-name">testPasswordMaskedToggle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUIElementsPresent">
+                  </a> <!-- testUIElementsPresent -->
+                  <span class="method-name">testUIElementsPresent</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,19 +243,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testInvalidLoginShowsErrorMessage')
 data.setCell(0, 2, 'com.janitri.tests.LoginTest')
-data.setCell(0, 3, 12367);
+data.setCell(0, 3, 11805);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testPasswordMaskedToggle')
+data.setCell(1, 1, 'testLoginButtonDisabledWhenFieldsAreEmpty')
 data.setCell(1, 2, 'com.janitri.tests.LoginTest')
-data.setCell(1, 3, 5144);
+data.setCell(1, 3, 5114);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLoginButtonDisabledWhenFieldsAreEmpty')
+data.setCell(2, 1, 'testPasswordMaskedToggle')
 data.setCell(2, 2, 'com.janitri.tests.LoginTest')
-data.setCell(2, 3, 4623);
+data.setCell(2, 3, 5045);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testUIElementsPresent')
+data.setCell(3, 2, 'com.janitri.tests.LoginTest')
+data.setCell(3, 3, 575);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
@@ -281,37 +297,49 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testInvalidLoginShowsErrorMessage</span>
-                <span class="method-start">15992 ms</span>
+                <span class="method-start">9020 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28785 ms</span>
+                <span class="method-start">20836 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">31667 ms</span>
+                <span class="method-start">21348 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testLoginButtonDisabledWhenFieldsAreEmpty</span>
-                <span class="method-start">45411 ms</span>
+                <span class="method-start">25894 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50050 ms</span>
+                <span class="method-start">31018 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">50297 ms</span>
+                <span class="method-start">31286 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPasswordMaskedToggle</span>
-                <span class="method-start">62838 ms</span>
+                <span class="method-start">38617 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">67987 ms</span>
+                <span class="method-start">43664 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">43835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUIElementsPresent</span>
+                <span class="method-start">47517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48093 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

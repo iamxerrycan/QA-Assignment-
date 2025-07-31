@@ -20,10 +20,10 @@ public class LoginPage {
     @FindBy(css = "button[type='submit']")
     WebElement loginButton;
 
-    @FindBy(css = ".passowrd-visible") 
+    @FindBy(css = ".passowrd-visible")
     WebElement passwordEyeIcon;
 
-    @FindBy(css = ".normal-text") 
+    @FindBy(css = ".normal-text")
     WebElement errorMessage;
 
     public LoginPage(WebDriver driver) {
@@ -63,8 +63,6 @@ public class LoginPage {
         return passwordInput.getAttribute("type").equals("text");
     }
 
-    
-
     public String getErrorMessage() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -72,6 +70,32 @@ public class LoginPage {
             return errorMessage.getText();
         } catch (TimeoutException e) {
             return "";
+        }
+    }
+
+    // New methods for UI element checks
+    public boolean isEmailFieldPresent() {
+        return emailInput.isDisplayed();
+    }
+
+    public boolean isPasswordFieldPresent() {
+        return passwordInput.isDisplayed();
+    }
+
+    public boolean isEyeIconPresent() {
+        try {
+            return passwordEyeIcon.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
+    public boolean isSubtitleTextPresent(String expectedText) {
+        try {
+            WebElement subtitle = driver.findElement(By.className("sub-title"));
+            return subtitle.getText().trim().equals(expectedText);
+        } catch (NoSuchElementException e) {
+            return false;
         }
     }
 }

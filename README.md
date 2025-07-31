@@ -42,8 +42,8 @@ JanitriLoginAutomation/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/JanitriLoginAutomation.git
-cd JanitriLoginAutomation
+git clone https://github.com/iamxerrycan/QA-Assignment-
+cd QA-Assignment-
 
 ```
 

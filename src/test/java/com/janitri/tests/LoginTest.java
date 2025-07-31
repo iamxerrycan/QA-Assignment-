@@ -41,5 +41,25 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(login.isPasswordVisible(), "Password is still masked");
     }
 
-    
+    @Test
+    public void testUIElementsPresent() {
+        LoginPage login = new LoginPage(driver);
+
+        // Title check
+        String title = driver.getTitle();
+        Assert.assertTrue(title.contains("Login") || title.length() > 0, "Page title is missing or incorrect");
+
+        // Email field visible
+        Assert.assertTrue(login.isEmailFieldPresent(), "Email input field not visible");
+
+        // Password field visible
+        Assert.assertTrue(login.isPasswordFieldPresent(), "Password input field not visible");
+
+        // Eye icon visible
+        Assert.assertTrue(login.isEyeIconPresent(), "Password visibility toggle icon (eye) not visible");
+
+        // Sub-title check
+        Assert.assertTrue(login.isSubtitleTextPresent("Your Pregnancy and Newborn Monitoring Partner"),
+                "Sub-title text is incorrect or missing");
+    }
 }

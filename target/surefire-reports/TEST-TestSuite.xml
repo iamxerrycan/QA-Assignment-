@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="1" name="TestSuite" time="22.771" errors="0" skipped="0">
+<testsuite tests="4" failures="1" name="TestSuite" time="22.553" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -58,19 +58,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="com.janitri.tests.LoginTest" name="testInvalidLoginShowsErrorMessage" time="12.988"/>
-  <testcase classname="com.janitri.tests.LoginTest" name="testLoginButtonDisabledWhenFieldsAreEmpty" time="4.638">
+  <testcase classname="com.janitri.tests.LoginTest" name="testInvalidLoginShowsErrorMessage" time="11.801"/>
+  <testcase classname="com.janitri.tests.LoginTest" name="testLoginButtonDisabledWhenFieldsAreEmpty" time="5.132">
     <failure message="Login button should be disabled when fields are empty expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: Login button should be disabled when fields are empty expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertFalse(Assert.java:79)
 	at com.janitri.tests.LoginTest.testLoginButtonDisabledWhenFieldsAreEmpty(LoginTest.java:17)
 </failure>
-    <system-err>Jul 31, 2025 12:40:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err>Jul 31, 2025 12:51:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jul 31, 2025 12:40:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 31, 2025 12:51:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.119. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
 </system-err>
   </testcase>
-  <testcase classname="com.janitri.tests.LoginTest" name="testPasswordMaskedToggle" time="5.145"/>
+  <testcase classname="com.janitri.tests.LoginTest" name="testPasswordMaskedToggle" time="5.045"/>
+  <testcase classname="com.janitri.tests.LoginTest" name="testUIElementsPresent" time="0.575"/>
 </testsuite>
