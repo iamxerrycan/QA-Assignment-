@@ -1,0 +1,6 @@
+| TC ID | Test Scenario      | Test Steps                                   | Expected Result                     | Actual Result | Status | Priority | Type        |
+| ----- | ------------------ | -------------------------------------------- | ----------------------------------- | ------------- | ------ | -------- | ----------- |
+| TC001 | Blank Fields Login | Leave email & password empty and click login | Login button is disabled            | As per UI     | Pass   | High     | Negative/UI |
+| TC002 | Random credentials | Enter wrong email & password and click login | "Invalid credentials" error         | As per UI     | Pass   | High     | Negative    |
+| TC003 | Password Toggle    | Enter password & click eye icon              | Password becomes visible            | As per UI     | Pass   | Medium   | UI          |
+| TC004 | UI Elements Check  | Open login page                              | Title, inputs, eye icon are visible | As per UI     | Pass   | Low      | UI          |
